@@ -3,22 +3,18 @@ package com.sellingo;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import page_base.Home_Page_POM;
-import test_base.BaseClass;
+import report.ExtentManager;
 
-public class HomePageTest extends BaseClass {
+
+public class HomePageTest extends BeforeAfterMethods {
 	Home_Page_POM homePagePom ;
 
 	@BeforeMethod
 	public void setUp() {
-		driverSetup();
 		homePagePom  = new Home_Page_POM();
 	}
 	public List<String> expectedHeader () {
@@ -43,7 +39,7 @@ public class HomePageTest extends BaseClass {
 		return hMap;
 	}
 
-	//@Test
+	@Test(priority = 1)
 	public void verifyHomePageText() {
 
 		List<String> actualMenuList =  homePagePom.headerMenuList();
@@ -53,56 +49,57 @@ public class HomePageTest extends BaseClass {
 		String actualRegiterText= homePagePom.registerText();
 		String expectedRegiterText ="REGISTER";
 		Assert.assertEquals(actualRegiterText, expectedRegiterText);
+		ExtentManager.onTestPass("Extent report checking"); // insert message here for perticular task
 
 		String actualLoginText= 	homePagePom.loginText();
 		String expectedLoginText = "LOGIN";
 		Assert.assertEquals(actualLoginText, expectedLoginText);
+		ExtentManager.onTestPass("Extent report checking");
 	}
 
-	//@Test
+	@Test (priority = 2)
 	public void verifySlides() {
 		HashMap<String, String> actualSlides = homePagePom.verifySlide();
 		HashMap<String, String>	expectedSlides = expectedSlideTitleAndSubtitle();	
 		Assert.assertEquals(actualSlides, expectedSlides);
-	}
-
-	@Test (priority = 1)
-	public void verifyFacebookLinkTest() {
-		String actualFacebookURL = homePagePom.verifyFacebookLink();
-		String expectedFacebookURL ="https://www.facebook.com/SellingoOnlineStore";
-		Assert.assertEquals(actualFacebookURL, expectedFacebookURL);	
-	}
-
-	@Test (priority = 2)
-	public void verifyTwitterLinkTest() {
-		String actualTwitterURL = homePagePom.verifyTwitterLink();	
-		Assert.assertTrue(actualTwitterURL.contains("x.com"));	
+		ExtentManager.onTestPass("Extent report checking");
 	}
 
 	@Test (priority = 3)
+	public void verifyFacebookLinkTest() {
+		String actualFacebookURL = homePagePom.verifyFacebookLink();
+		String expectedFacebookURL ="https://www.facebook.com/SellingoOnlineStore";
+		Assert.assertEquals(actualFacebookURL, expectedFacebookURL);
+		ExtentManager.onTestPass("Extent report checking");
+	}
+
+	@Test (priority = 4)
+	public void verifyTwitterLinkTest() {
+		String actualTwitterURL = homePagePom.verifyTwitterLink();	
+		Assert.assertTrue(actualTwitterURL.contains("x.com"));	
+		ExtentManager.onTestPass("Extent report checking");
+	}
+
+	@Test (priority = 5)
 	public void verifyInstagramLinkTest() {
 		String actualInstagramURL=homePagePom.verifyInstagramLink();
 		String expectedInstagramURL ="https://www.instagram.com/sellingo_onlinestore/";
 		Assert.assertEquals(actualInstagramURL, expectedInstagramURL);
+		ExtentManager.onTestPass("Extent report checking");
 	}
-	
-	@Test (priority = 4)
+
+	@Test (priority = 6)
 	public void verifyLinkedinLinkTest() {
 		String actualLinkedinURL= homePagePom.verifyLinkedinLink();
 		Assert.assertTrue(actualLinkedinURL.contains("linkedin.com"));
+		ExtentManager.onTestPass("Extent report checking");
 	}
-	
-	@Test (priority = 5)
+
+	@Test (priority = 7)
 	public void verifyYouTubeLinkTest() {
 		String actualYouTubeURL = homePagePom.verifyYouTubeLink();
 		String expctedYouTubeURL ="https://www.youtube.com/channel/UCSoIdbOJxMmgPe1cm_L6nww";
 		Assert.assertEquals(actualYouTubeURL, expctedYouTubeURL);
-	}
-	
-	
-	
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
+		ExtentManager.onTestPass("Extent report checking");
 	}
 }

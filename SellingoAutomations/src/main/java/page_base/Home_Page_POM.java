@@ -5,13 +5,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import lombok.experimental.UtilityClass;
 import test_base.BaseClass;
 import test_utility.ReusableMethods;
 
@@ -30,14 +27,7 @@ public class Home_Page_POM extends BaseClass{
 	@FindBy(xpath = "//a[@href=\"https://www.instagram.com/sellingo_onlinestore\"]")private WebElement InstagramLink;
 	@FindBy(xpath = "//a[@href=\"https://www.linkedin.com/company/sellingocatalog\"]") private WebElement LinkedinLink;
 	@FindBy(xpath = "//a[@href=\"https://www.youtube.com/channel/UCSoIdbOJxMmgPe1cm_L6nww\"]") private WebElement YoutubeLink;
-
-
-
-
-
-
-
-
+	@FindBy(xpath = "//div[@class='ytp-cued-thumbnail-overlay']")private WebElement YoutubeVideo;
 
 	public Home_Page_POM() {
 		PageFactory.initElements(driver, this);	
@@ -127,7 +117,20 @@ public class Home_Page_POM extends BaseClass{
 		String actualYouTubeUrl = switchToChildwindowhandles ();
 		return actualYouTubeUrl;
 	}
-
+	
+	public String watchOnYoutube() {
+		ReusableMethods.scrollDown(YoutubeVideo);
+		driver.switchTo().frame(YoutubeVideo);	
+		YoutubeVideo.click();
+		String actualWatchOnYoutubeUrl = switchToChildwindowhandles();
+		return actualWatchOnYoutubeUrl ;
+	}
+	
+	public void LoginFlow() {
+		ReusableMethods.explicitWait(LoginText);
+		LoginText.click();
+	}
+	
 
 
 
