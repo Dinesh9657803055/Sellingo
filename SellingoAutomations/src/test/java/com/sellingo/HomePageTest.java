@@ -99,10 +99,7 @@ public class HomePageTest extends BaseClass {
 		Assert.assertEquals(actualYouTubeURL, expctedYouTubeURL);
 	}
 	
-	@Test
-	public void test() {
-		
-	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
