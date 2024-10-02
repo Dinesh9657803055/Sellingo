@@ -1,4 +1,4 @@
-package page_base;
+package pom_Pages;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
@@ -26,18 +26,27 @@ public class Login_Page extends BaseClass {
 	@FindBy(xpath = "//button[text()=\"Send OTP\"]") private WebElement SendOTP;
 	@FindBy(xpath = "//span[@id=\"id_forgot_otp_send_err\"]") private WebElement ErrorMessageForgotPassMobNumber;
 	@FindBy(xpath = "//span[@id=\"id_invalid_forgot_err\"]") private WebElement ErrorMessageForgotPassOTP;
+	@FindBy(xpath = "//a[@class=\"btn btn-a add-new-catalog-bt add_new_catalog_btn\"]") private WebElement AddNewCatalog;
+	@FindBy(xpath = "//input[@id=\"catalog_image\"]") public WebElement CatalogImage;
+	@FindBy(xpath = "//input[@class=\"form-control input-a\"]") public WebElement CatalogName;
+	@FindBy(xpath = "//textarea[@id=\"catalog_description\"]")public WebElement CatalogDescription;
+	@FindBy(xpath = "//button[@class=\"btn btn-a text-uppercase add_catalog\"]") public WebElement SaveAndContinueButton;
+	
 	public Login_Page() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void enterMobileNumber(String mobileNumber) {
+		ReusableMethods.explicitWait(InputMobileNumber);
 		InputMobileNumber.sendKeys(mobileNumber);	
 	}
 	public void enterPassword(String password) {
+		ReusableMethods.explicitWait(InsertPassword);
 		InsertPassword.sendKeys(password);
 	}
 	
 	public void clickLoginButton() {
+		ReusableMethods.explicitWait(LoginButton);
 		LoginButton.click();	
 	}
 	public String afterLoginURL() {
@@ -80,6 +89,17 @@ public class Login_Page extends BaseClass {
 	public String forgotPassOtpErrorMessage() {
 		return ErrorMessageForgotPassOTP.getText();
 		}
+	
+	public void createNewCatalog() throws InterruptedException {
+		ReusableMethods.explicitWait(AddNewCatalog);
+		
+		AddNewCatalog.click();
+		CatalogImage.sendKeys("C:\\Users\\dk209\\Downloads\\Narrow Chain Bracelet & Plain Bangle - Narrow Chain Bracelet &amp; Plain Bangle.jpeg");
+		Thread.sleep(5000);
+		CatalogName.sendKeys("TestCatalogName");
+		CatalogDescription.sendKeys("Test Catalog Description");
+		SaveAndContinueButton.click();
+	}
 	
 	
 	

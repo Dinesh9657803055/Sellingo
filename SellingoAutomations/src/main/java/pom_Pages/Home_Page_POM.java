@@ -1,4 +1,4 @@
-package page_base;
+package pom_Pages;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,7 +27,6 @@ public class Home_Page_POM extends BaseClass{
 	@FindBy(xpath = "//a[@href=\"https://www.instagram.com/sellingo_onlinestore\"]")private WebElement InstagramLink;
 	@FindBy(xpath = "//a[@href=\"https://www.linkedin.com/company/sellingocatalog\"]") private WebElement LinkedinLink;
 	@FindBy(xpath = "//a[@href=\"https://www.youtube.com/channel/UCSoIdbOJxMmgPe1cm_L6nww\"]") private WebElement YoutubeLink;
-	@FindBy(xpath = "//div[@class='ytp-cued-thumbnail-overlay']")private WebElement YoutubeVideo;
 
 	public Home_Page_POM() {
 		PageFactory.initElements(driver, this);	
@@ -84,6 +83,7 @@ public class Home_Page_POM extends BaseClass{
 
 	public String verifyFacebookLink() {
 		ReusableMethods.scrollDown(ShareOn);
+		ReusableMethods.explicitWait(FacebookLink);
 		FacebookLink.click();
 		String actualFacebookURL= switchToChildwindowhandles();
 		return actualFacebookURL;
@@ -91,6 +91,7 @@ public class Home_Page_POM extends BaseClass{
 
 	public String verifyTwitterLink() {
 		ReusableMethods.scrollDown(ShareOn);
+		ReusableMethods.explicitWait(TwitterLink);
 		TwitterLink.click();
 		String actualTwitterUrl = switchToChildwindowhandles();
 		return actualTwitterUrl;
@@ -99,6 +100,7 @@ public class Home_Page_POM extends BaseClass{
 	
 	public String verifyInstagramLink() {
 		ReusableMethods.scrollDown(ShareOn);
+		ReusableMethods.explicitWait(InstagramLink);
 		InstagramLink.click();
 		String actualInstaramUrl = switchToChildwindowhandles ();
 		return actualInstaramUrl;	
@@ -106,6 +108,7 @@ public class Home_Page_POM extends BaseClass{
 	
 	public String verifyLinkedinLink() {
 		ReusableMethods.scrollDown(ShareOn);
+		ReusableMethods.explicitWait(LinkedinLink);
 		LinkedinLink.click();
 		String actualLinkedinUrl =switchToChildwindowhandles();
 		return actualLinkedinUrl;
@@ -113,17 +116,10 @@ public class Home_Page_POM extends BaseClass{
 	
 	public String verifyYouTubeLink() {
 		ReusableMethods.scrollDown(ShareOn);
+		ReusableMethods.explicitWait(YoutubeLink);
 		YoutubeLink.click();
 		String actualYouTubeUrl = switchToChildwindowhandles ();
 		return actualYouTubeUrl;
-	}
-	
-	public String watchOnYoutube() {
-		ReusableMethods.scrollDown(YoutubeVideo);
-		driver.switchTo().frame(YoutubeVideo);	
-		YoutubeVideo.click();
-		String actualWatchOnYoutubeUrl = switchToChildwindowhandles();
-		return actualWatchOnYoutubeUrl ;
 	}
 	
 	public void LoginFlow() {

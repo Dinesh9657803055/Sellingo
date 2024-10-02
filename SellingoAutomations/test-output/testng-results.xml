@@ -1,360 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="14" passed="10" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-29T22:56:33 IST" name="Suite" finished-at="2024-09-29T22:58:40 IST" duration-ms="126437">
+  <suite started-at="2024-09-30T22:47:23 IST" name="Default suite" finished-at="2024-09-30T22:47:51 IST" duration-ms="28329">
     <groups>
     </groups>
-    <test started-at="2024-09-29T22:56:33 IST" name="Test" finished-at="2024-09-29T22:58:40 IST" duration-ms="126437">
-      <class name="com.sellingo.LoginTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:03 IST" name="setup" finished-at="2024-09-29T22:58:09 IST" duration-ms="6143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginTest()[pri:1, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:09 IST" name="BeforeMethod" finished-at="2024-09-29T22:58:09 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="loginTest()[pri:1, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:09 IST" name="loginTest" finished-at="2024-09-29T22:58:15 IST" duration-ms="5821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:15 IST" name="tearDown" finished-at="2024-09-29T22:58:16 IST" duration-ms="1312" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:1, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:16 IST" name="setup" finished-at="2024-09-29T22:58:22 IST" duration-ms="6312" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.errorMessgeMobileNumberTest()[pri:2, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:22 IST" name="BeforeMethod" finished-at="2024-09-29T22:58:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="errorMessgeMobileNumberTest()[pri:2, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:22 IST" name="errorMessgeMobileNumberTest" finished-at="2024-09-29T22:58:28 IST" duration-ms="5472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMessgeMobileNumberTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:28 IST" name="tearDown" finished-at="2024-09-29T22:58:30 IST" duration-ms="2048" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=errorMessgeMobileNumberTest status=SUCCESS method=LoginTest.errorMessgeMobileNumberTest()[pri:2, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:30 IST" name="setup" finished-at="2024-09-29T22:58:36 IST" duration-ms="6067" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.errorMessgePasswordTest()[pri:3, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:36 IST" name="BeforeMethod" finished-at="2024-09-29T22:58:36 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="errorMessgePasswordTest()[pri:3, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:36 IST" name="errorMessgePasswordTest" finished-at="2024-09-29T22:58:39 IST" duration-ms="2695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMessgePasswordTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.LoginTest@55183b20]" started-at="2024-09-29T22:58:39 IST" name="tearDown" finished-at="2024-09-29T22:58:40 IST" duration-ms="1066" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=errorMessgePasswordTest status=SUCCESS method=LoginTest.errorMessgePasswordTest()[pri:3, instance:com.sellingo.LoginTest@55183b20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.sellingo.LoginTest -->
-      <class name="com.sellingo.HomePageTest">
-        <test-method is-config="true" signature="beforeSuitMethod()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:33 IST" name="beforeSuitMethod" finished-at="2024-09-29T22:56:33 IST" duration-ms="576" status="PASS">
+    <test started-at="2024-09-30T22:47:23 IST" name="Default test" finished-at="2024-09-30T22:47:51 IST" duration-ms="28329">
+      <class name="com.sellingo.TC002_LoginTest">
+        <test-method is-config="true" signature="beforeSuitMethod()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:22 IST" name="beforeSuitMethod" finished-at="2024-09-30T22:47:23 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitMethod -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:33 IST" name="beforeTest" finished-at="2024-09-29T22:56:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:23 IST" name="beforeTest" finished-at="2024-09-30T22:47:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:33 IST" name="setup" finished-at="2024-09-29T22:56:40 IST" duration-ms="6649" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:23 IST" name="setup" finished-at="2024-09-30T22:47:48 IST" duration-ms="24931" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyHomePageText()[pri:1, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.errorMessgeMobileNumberTest()[pri:1, instance:com.sellingo.TC002_LoginTest@158d2680] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:40 IST" name="setUp" finished-at="2024-09-29T22:56:40 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:48 IST" name="BeforeMethod" finished-at="2024-09-30T22:47:48 IST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyHomePageText()[pri:1, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:40 IST" name="verifyHomePageText" finished-at="2024-09-29T22:56:45 IST" duration-ms="5113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageText -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:45 IST" name="tearDown" finished-at="2024-09-29T22:56:46 IST" duration-ms="843" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomePageText status=SUCCESS method=HomePageTest.verifyHomePageText()[pri:1, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:46 IST" name="setup" finished-at="2024-09-29T22:56:51 IST" duration-ms="5216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifySlides()[pri:2, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:51 IST" name="setUp" finished-at="2024-09-29T22:56:51 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySlides()[pri:2, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:51 IST" name="verifySlides" finished-at="2024-09-29T22:56:55 IST" duration-ms="4098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySlides -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:55 IST" name="tearDown" finished-at="2024-09-29T22:56:56 IST" duration-ms="481" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySlides status=SUCCESS method=HomePageTest.verifySlides()[pri:2, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:56:56 IST" name="setup" finished-at="2024-09-29T22:57:01 IST" duration-ms="5065" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyFacebookLinkTest()[pri:3, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:01 IST" name="setUp" finished-at="2024-09-29T22:57:01 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyFacebookLinkTest()[pri:3, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:01 IST" name="verifyFacebookLinkTest" finished-at="2024-09-29T22:57:05 IST" duration-ms="4300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFacebookLinkTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:05 IST" name="tearDown" finished-at="2024-09-29T22:57:06 IST" duration-ms="755" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyFacebookLinkTest status=SUCCESS method=HomePageTest.verifyFacebookLinkTest()[pri:3, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:06 IST" name="setup" finished-at="2024-09-29T22:57:11 IST" duration-ms="5199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyTwitterLinkTest()[pri:4, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:11 IST" name="setUp" finished-at="2024-09-29T22:57:11 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTwitterLinkTest()[pri:4, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:11 IST" name="verifyTwitterLinkTest" finished-at="2024-09-29T22:57:21 IST" duration-ms="9356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTwitterLinkTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:21 IST" name="tearDown" finished-at="2024-09-29T22:57:21 IST" duration-ms="507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTwitterLinkTest status=SUCCESS method=HomePageTest.verifyTwitterLinkTest()[pri:4, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:21 IST" name="setup" finished-at="2024-09-29T22:57:24 IST" duration-ms="2783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyInstagramLinkTest()[pri:5, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:24 IST" name="setUp" finished-at="2024-09-29T22:57:24 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyInstagramLinkTest()[pri:5, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:24 IST" name="verifyInstagramLinkTest" finished-at="2024-09-29T22:57:30 IST" duration-ms="6062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInstagramLinkTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:30 IST" name="tearDown" finished-at="2024-09-29T22:57:31 IST" duration-ms="580" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInstagramLinkTest status=SUCCESS method=HomePageTest.verifyInstagramLinkTest()[pri:5, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:31 IST" name="setup" finished-at="2024-09-29T22:57:35 IST" duration-ms="4881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyLinkedinLinkTest()[pri:6, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:35 IST" name="setUp" finished-at="2024-09-29T22:57:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLinkedinLinkTest()[pri:6, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:35 IST" name="verifyLinkedinLinkTest" finished-at="2024-09-29T22:57:41 IST" duration-ms="5072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLinkedinLinkTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:41 IST" name="tearDown" finished-at="2024-09-29T22:57:41 IST" duration-ms="603" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLinkedinLinkTest status=SUCCESS method=HomePageTest.verifyLinkedinLinkTest()[pri:6, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:41 IST" name="setup" finished-at="2024-09-29T22:57:44 IST" duration-ms="2790" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyYouTubeLinkTest()[pri:7, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:44 IST" name="setUp" finished-at="2024-09-29T22:57:44 IST" duration-ms="30" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyYouTubeLinkTest()[pri:7, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:44 IST" name="verifyYouTubeLinkTest" finished-at="2024-09-29T22:57:54 IST" duration-ms="9704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyYouTubeLinkTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:54 IST" name="tearDown" finished-at="2024-09-29T22:57:54 IST" duration-ms="503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyYouTubeLinkTest status=SUCCESS method=HomePageTest.verifyYouTubeLinkTest()[pri:7, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:57:54 IST" name="setup" finished-at="2024-09-29T22:58:00 IST" duration-ms="5711" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyWatchOnYoutubeLink()[pri:8, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:58:00 IST" name="setUp" finished-at="2024-09-29T22:58:00 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyWatchOnYoutubeLink()[pri:8, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:58:00 IST" name="verifyWatchOnYoutubeLink" finished-at="2024-09-29T22:58:01 IST" duration-ms="735" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="errorMessgeMobileNumberTest()[pri:1, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:48 IST" name="errorMessgeMobileNumberTest" finished-at="2024-09-30T22:47:49 IST" duration-ms="1601" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ytp-cued-thumbnail-overlay']"}
+              <![CDATA[element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
   (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [882ffcf56da9b4cc8c8302b09214f16a, findElement {using=xpath, value=//div[@class='ytp-cued-thumbnail-overlay']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 882ffcf56da9b4cc8c8302b09214f16a]]>
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ytp-cued-thumbnail-overlay']"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
   (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [882ffcf56da9b4cc8c8302b09214f16a, findElement {using=xpath, value=//div[@class='ytp-cued-thumbnail-overlay']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 882ffcf56da9b4cc8c8302b09214f16a
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -365,25 +63,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:465)
-at test_utility.ReusableMethods.scrollDown(ReusableMethods.java:28)
-at page_base.Home_Page_POM.watchOnYoutube(Home_Page_POM.java:122)
-at com.sellingo.HomePageTest.verifyWatchOnYoutubeLink(HomePageTest.java:108)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pom_Pages.Home_Page_POM.LoginFlow(Home_Page_POM.java:127)
+at com.sellingo.TC002_LoginTest.errorMessgeMobileNumberTest(LoginTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -412,40 +99,40 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWatchOnYoutubeLink -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:58:01 IST" name="tearDown" finished-at="2024-09-29T22:58:03 IST" duration-ms="2094" status="FAIL">
+        </test-method> <!-- errorMessgeMobileNumberTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:49 IST" name="tearDown" finished-at="2024-09-30T22:47:51 IST" duration-ms="1603" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWatchOnYoutubeLink status=FAILURE method=HomePageTest.verifyWatchOnYoutubeLink()[pri:8, instance:com.sellingo.HomePageTest@6adbc9d] output={null}]]]>
+                <![CDATA[[TestResult name=errorMessgeMobileNumberTest status=FAILURE method=LoginTest.errorMessgeMobileNumberTest()[pri:1, instance:com.sellingo.TC002_LoginTest@158d2680] output={null}]]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ytp-cued-thumbnail-overlay']"}
+              <![CDATA[element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
   (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [882ffcf56da9b4cc8c8302b09214f16a, findElement {using=xpath, value=//div[@class='ytp-cued-thumbnail-overlay']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 882ffcf56da9b4cc8c8302b09214f16a]]>
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ytp-cued-thumbnail-overlay']"}
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
   (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [882ffcf56da9b4cc8c8302b09214f16a, findElement {using=xpath, value=//div[@class='ytp-cued-thumbnail-overlay']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 882ffcf56da9b4cc8c8302b09214f16a
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2
 at org.testng.Assert.fail(Assert.java:99)
 at com.sellingo.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -485,11 +172,233 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.sellingo.HomePageTest@6adbc9d]" started-at="2024-09-29T22:58:40 IST" name="afterSuite" finished-at="2024-09-29T22:58:41 IST" duration-ms="952" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671563" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="BeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671565" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="errorMessgePasswordTest()[pri:2, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="errorMessgePasswordTest" finished-at="2024-09-30T22:47:51 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2
+at org.testng.Assert.fail(Assert.java:99)
+at com.sellingo.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessgePasswordTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671580" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671582" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="BeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671583" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="loginTest()[pri:3, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="loginTest" finished-at="2024-09-30T22:47:51 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2
+at org.testng.Assert.fail(Assert.java:99)
+at com.sellingo.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671607" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671611" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="BeforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671612" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="createCatalog()[pri:4, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="createCatalog" finished-at="2024-09-30T22:47:51 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: element click intercepted: Element <a href="" class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#modal...Form">Login</a> is not clickable at point (1134, 41). Other element would receive the click: <div id="preloader" style="opacity: 0.148225;">...</div>
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71eae45288c5a0e998006df8382bebc2, clickElement {id=f.DB1D16FF0F8651513902366D27E9B091.d.2CA7DF20F47126E160BD568BDC388BDC.e.119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\dk209\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62621/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (71eae45288c5a0e998006df8382bebc2)] -> xpath: //a[text()='Login']]
+Session ID: 71eae45288c5a0e998006df8382bebc2
+at org.testng.Assert.fail(Assert.java:99)
+at com.sellingo.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCatalog -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671630" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.sellingo.TC002_LoginTest@158d2680]" started-at="2024-09-30T22:47:51 IST" name="afterSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727716671759" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.sellingo.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.sellingo.TC002_LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

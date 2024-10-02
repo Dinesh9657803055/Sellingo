@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.sellingo.HomePageTest">
+      <class name="com.sellingo.TC002_LoginTest">
         <methods>
           <include name="beforeSuitMethod"/>
-          <include name="setUp"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="setup"/>
-          <include name="verifyWatchOnYoutubeLink"/>
+          <include name="loginTest"/>
+          <include name="BeforeMethod"/>
+          <include name="createCatalog"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.sellingo.HomePageTest -->
+      </class> <!-- com.sellingo.TC002_LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

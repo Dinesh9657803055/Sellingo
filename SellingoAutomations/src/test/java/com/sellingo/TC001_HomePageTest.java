@@ -6,11 +6,12 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page_base.Home_Page_POM;
+
+import pom_Pages.Home_Page_POM;
 import report.ExtentManager;
 
 
-public class HomePageTest extends BeforeAfterMethods {
+public class TC001_HomePageTest extends BeforeAfterMethods {
 	Home_Page_POM homePagePom ;
 
 	@BeforeMethod
@@ -40,7 +41,7 @@ public class HomePageTest extends BeforeAfterMethods {
 	}
 
 	@Test(priority = 1)
-	public void verifyHomePageText() {
+	public void TC001_SC001_verifyHomePageText() {
 
 		List<String> actualMenuList =  homePagePom.headerMenuList();
 		List<String> expectedMenuList = expectedHeader();
@@ -58,7 +59,7 @@ public class HomePageTest extends BeforeAfterMethods {
 	}
 
 	@Test (priority = 2)
-	public void verifySlides() {
+	public void TC001_SC002_verifySlides() {
 		HashMap<String, String> actualSlides = homePagePom.verifySlide();
 		HashMap<String, String>	expectedSlides = expectedSlideTitleAndSubtitle();	
 		Assert.assertEquals(actualSlides, expectedSlides);
@@ -66,7 +67,7 @@ public class HomePageTest extends BeforeAfterMethods {
 	}
 
 	@Test (priority = 3)
-	public void verifyFacebookLinkTest() {
+	public void TC001_SC003verifyFacebookLinkTest() {
 		String actualFacebookURL = homePagePom.verifyFacebookLink();
 		String expectedFacebookURL ="https://www.facebook.com/SellingoOnlineStore";
 		Assert.assertEquals(actualFacebookURL, expectedFacebookURL);
@@ -74,14 +75,14 @@ public class HomePageTest extends BeforeAfterMethods {
 	}
 
 	@Test (priority = 4)
-	public void verifyTwitterLinkTest() {
+	public void TC001_SC004_verifyTwitterLinkTest() {
 		String actualTwitterURL = homePagePom.verifyTwitterLink();	
 		Assert.assertTrue(actualTwitterURL.contains("x.com"));	
 		ExtentManager.onTestPass("Extent report checking");
 	}
 
 	@Test (priority = 5)
-	public void verifyInstagramLinkTest() {
+	public void TC001_SC005_verifyInstagramLinkTest() {
 		String actualInstagramURL=homePagePom.verifyInstagramLink();
 		String expectedInstagramURL ="https://www.instagram.com/sellingo_onlinestore/";
 		Assert.assertEquals(actualInstagramURL, expectedInstagramURL);
@@ -89,14 +90,14 @@ public class HomePageTest extends BeforeAfterMethods {
 	}
 
 	@Test (priority = 6)
-	public void verifyLinkedinLinkTest() {
+	public void TC001_SC006_verifyLinkedinLinkTest() {
 		String actualLinkedinURL= homePagePom.verifyLinkedinLink();
 		Assert.assertTrue(actualLinkedinURL.contains("linkedin.com"));
 		ExtentManager.onTestPass("Extent report checking");
 	}
 
 	@Test (priority = 7)
-	public void verifyYouTubeLinkTest() {
+	public void TC001_SC007_verifyYouTubeLinkTest() {
 		String actualYouTubeURL = homePagePom.verifyYouTubeLink();
 		String expctedYouTubeURL ="https://www.youtube.com/channel/UCSoIdbOJxMmgPe1cm_L6nww";
 		Assert.assertEquals(actualYouTubeURL, expctedYouTubeURL);

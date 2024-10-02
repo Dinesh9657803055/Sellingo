@@ -22,7 +22,6 @@ public class ExtentManager {
 		String repName = "Test-Report " + timeStamp + ".html";
 
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./ExtentReport/" + repName);
-//		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./ExtentReport/1");
 		sparkReporter.config().setDocumentTitle("WebAutomation");
 		sparkReporter.config().setReportName("OpenXcell Technolabs");
 		sparkReporter.config().setTheme(Theme.DARK);

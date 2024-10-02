@@ -26,7 +26,6 @@ public class ReusableMethods extends BaseClass {
 	public static void scrollDown(WebElement element) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].scrollIntoView(true);", element);
-
 	}
 
 	public static String ExcellDataFetching(int rowIndex, int colIndex) throws EncryptedDocumentException, Throwable {

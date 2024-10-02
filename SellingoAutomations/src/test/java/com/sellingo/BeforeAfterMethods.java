@@ -24,7 +24,7 @@ public class BeforeAfterMethods extends BaseClass {
 	}
 
 	@BeforeMethod 
-	public void setup(ITestResult result) {
+	public static void setup(ITestResult result) {
 		ExtentManager.onTestSuccess(result.getMethod().getMethodName());
 		driverSetup();
 	}
@@ -38,7 +38,7 @@ public class BeforeAfterMethods extends BaseClass {
 			ExtentManager.onTestSkipped(result.getMethod().getMethodName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 		}
-		driver.close();
+		//driver.close();
 	}
 
 	@AfterSuite
