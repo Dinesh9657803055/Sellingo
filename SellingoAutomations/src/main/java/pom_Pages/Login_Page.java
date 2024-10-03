@@ -1,10 +1,10 @@
 package pom_Pages;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.Select;
 import test_base.BaseClass;
 import test_utility.ReusableMethods;
 
@@ -31,6 +31,20 @@ public class Login_Page extends BaseClass {
 	@FindBy(xpath = "//input[@class=\"form-control input-a\"]") public WebElement CatalogName;
 	@FindBy(xpath = "//textarea[@id=\"catalog_description\"]")public WebElement CatalogDescription;
 	@FindBy(xpath = "//button[@class=\"btn btn-a text-uppercase add_catalog\"]") public WebElement SaveAndContinueButton;
+	@FindBy(xpath = "//select[@class=\"form-control select-a\"]") private WebElement DropdownTextOnExpiry;
+	@FindBy(xpath = "//span[text()=\"Catalog Settings \"]") private WebElement CatalogSettingText;
+	@FindBy(xpath = "//div[@class=\"input-side-right\"]//div[@class=\"toggle-switch\"][1]") private WebElement ShowPriceToogle;
+	@FindBy(xpath = "(//div[@class=\"input-side-right\"]//div[@class=\"toggle-switch\"])[2]") private WebElement ShowQuantityToggle;
+	@FindBy(xpath = "(//div[@class=\"input-side-right\"]//div[@class=\"toggle-switch\"])[3]") private WebElement BackOrderingToggle;
+	@FindBy(xpath = "(//div[@class=\"input-side-right\"]//div[@class=\"toggle-switch\"])[4]")private WebElement BuyerMobVerification ;
+	@FindBy(xpath = "//div[@class=\"toggle-switch\"]//a[text()='Select Theme']") private WebElement SelectThemeLink;
+	@FindBy(xpath = "//label[text()=\"Elegance\"]" )private WebElement EleganceTheme;
+	@FindBy(xpath = "//button[text()=\"Save & Continue\"]")private WebElement SaveAndContinuebuttonThemePage;
+	@FindBy(xpath = "//button[text()=\"Save & Continue\"]")private WebElement SaveAndContinuebuttonStep2Page;
+	@FindBy(xpath = "//a[text()=\"ADD NEW PRODUCT\"]")private WebElement AddNewProductButton;
+	@FindBy(xpath = "//label[@class=\"label-b\"]") private WebElement AddExistingProductButton;
+	@FindBy(xpath = "(//a[text()=\"PUBLISH CATALOG\"])[2]")private WebElement PublishCatalog;
+	@FindBy(xpath = "class=\"sub-title-b text-center \"") private WebElement TotalViewstext;
 	
 	public Login_Page() {
 		PageFactory.initElements(driver, this);
@@ -72,16 +86,26 @@ public class Login_Page extends BaseClass {
 		return ErrorMessagePassword.getText();
 	}
 	
-	public void clickForgotPassword() {
+	public void clickForgotPassword() {		
+		clickLoginButton();
+		ReusableMethods.explicitWait(ForgotPasswordLink);
+		ForgotPasswordLink.click();
+	}
+	
+	public void clickForgotPassword2() {		
+		ReusableMethods.explicitWait(ForgotPasswordLink);
 		ForgotPasswordLink.click();
 	}
 	
 	public void forgotPaaswordClose(){
-		ForgotPasswordLink.click();
+		clickForgotPassword();
+		ReusableMethods.explicitWait(CloseButtonForgotPassword);
 		CloseButtonForgotPassword.click();
 	}
 	
 	public String forgotPassErrorMsgMobNumber() {
+		clickForgotPassword();
+		ReusableMethods.explicitWait(SendOTP);	
 		SendOTP.click();
 		return ErrorMessageForgotPassMobNumber.getText();	
 	}
@@ -91,14 +115,42 @@ public class Login_Page extends BaseClass {
 		}
 	
 	public void createNewCatalog() throws InterruptedException {
-		ReusableMethods.explicitWait(AddNewCatalog);
-		
+		ReusableMethods.explicitWait(AddNewCatalog);	
 		AddNewCatalog.click();
+		Thread.sleep(5000);
 		CatalogImage.sendKeys("C:\\Users\\dk209\\Downloads\\Narrow Chain Bracelet & Plain Bangle - Narrow Chain Bracelet &amp; Plain Bangle.jpeg");
 		Thread.sleep(5000);
 		CatalogName.sendKeys("TestCatalogName");
 		CatalogDescription.sendKeys("Test Catalog Description");
 		SaveAndContinueButton.click();
+		System.out.println("Congrats...Step1 catalog information has completed successfully....!!!!");
+		CatalogSettingText.getText();
+		ReusableMethods.explicitWait(SelectThemeLink);
+		SelectThemeLink.click();
+		ReusableMethods.explicitWait(EleganceTheme);	
+		EleganceTheme.click();
+		SaveAndContinuebuttonThemePage.click();
+		ReusableMethods.explicitWait(ShowPriceToogle);	
+		Select s = new Select(DropdownTextOnExpiry);
+		s.selectByVisibleText("Add to Cart");
+		ShowPriceToogle.click();
+		ShowQuantityToggle.click();
+		BackOrderingToggle.click();
+		BuyerMobVerification.click();
+		SaveAndContinuebuttonStep2Page.click();
+		System.out.println("Congrats...Step2 catalog Setting has completed successfully....!!!!");
+		Thread.sleep(3000);
+		ReusableMethods.explicitWait(AddExistingProductButton);
+		//AddNewProductButton.click();
+		//AddExistingProductButton.click();
+		Actions act = new Actions(driver);
+		//act.moveToElement(AddExistingProductButton);
+		act.click(AddExistingProductButton);
+		ReusableMethods.explicitWait(PublishCatalog);
+		PublishCatalog.click();
+		ReusableMethods.explicitWait(TotalViewstext);
+		//return TotalViewstext.getText();
+
 	}
 	
 	
