@@ -32,7 +32,8 @@ public class Home_Page_POM extends BaseClass{
 		PageFactory.initElements(driver, this);	
 	}
 	public List<String> headerMenuList() {
-		List<String> headerMenuText = new ArrayList<String>();	 
+		List<String> headerMenuText = new ArrayList<String>();
+		ReusableMethods.explicitWait(HeaderMenu.get(0));
 		List<WebElement> headerMenuElement = HeaderMenu;
 		for (WebElement element: headerMenuElement) {
 			headerMenuText.add(element.getText());		 

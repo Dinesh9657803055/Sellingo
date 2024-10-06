@@ -3,17 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.sellingo.TC002_LoginTest">
+      <class name="com.sellingo.TC001_HomePageTest">
         <methods>
-          <include name="beforeSuitMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="loginTest"/>
-          <include name="BeforeMethod"/>
-          <include name="createCatalog"/>
+          <include name="TC001_SC007_verifyYouTubeLinkTest"/>
+          <include name="TC001_SC003verifyFacebookLinkTest"/>
+          <include name="TC001_SC006_verifyLinkedinLinkTest"/>
+          <include name="setUp"/>
+          <include name="TC001_SC001_verifyHomePageText"/>
           <include name="tearDown"/>
+          <include name="TC001_SC005_verifyInstagramLinkTest"/>
+          <include name="beforeSuitMethod"/>
+          <include name="TC001_SC002_verifySlides"/>
+          <include name="afterSuite"/>
+          <include name="TC001_SC004_verifyTwitterLinkTest"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.sellingo.TC002_LoginTest -->
+      </class> <!-- com.sellingo.TC001_HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

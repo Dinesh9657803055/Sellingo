@@ -1,7 +1,7 @@
 package pom_Pages;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -9,23 +9,27 @@ import test_base.BaseClass;
 import test_utility.ReusableMethods;
 
 public class Login_Page extends BaseClass {
-	
+
 	@FindBy(xpath = "//input[@id=\"user_mobile_login\"]") private WebElement InputMobileNumber;
 	@FindBy(xpath = "//input[@id=\"user_password_login\"]")private WebElement InsertPassword;
 	@FindBy(xpath = "//span[@id=\"user_mobile_login-error\"]") private WebElement ErrorMessageMobileNumber;
 	@FindBy(xpath = "//span[@id=\"user_password_login-error\"]")private WebElement ErrorMessagePassword;
 	@FindBy(xpath = "//button[text()=\"LOGIN\"]") private WebElement LoginButton;
 	@FindBy(xpath = "//a[text()=\"Forgot Password\"]") private WebElement ForgotPasswordLink;
+	@FindBy(xpath = "//h2[text()='Forgot Password']") private WebElement ForgotPasswordText;
 	@FindBy(xpath = "//a[text()=\"REGISTER NOW!\"]") private WebElement RegisterNowButton;
 	@FindBy(xpath = "//a[text()=\"Terms & conditions\"]") private WebElement TermsAndConditions;
 	@FindBy(xpath = "//a[text()=\"Privacy policy\"]")private WebElement PrivacyPolicy ;
 	@FindBy(xpath = "(//span[text()=\"×\"])[1]") private WebElement CloseButton;
 	@FindBy(xpath = "//input[@id=\"user_mobile_forgot\"]")private WebElement FogotPasswordMobileField;
-	@FindBy(xpath = "//input[@id=\"conf_otp\"]") private WebElement ConfirmOTP;
+	@FindBy(xpath = "//input[@id=\"conf_otp\"]") private WebElement ConfirmOTP; 
+	@FindBy(xpath = "//button[text()=\"CONFIRM OTP\"]") private WebElement ConfirmOTPButton;
 	@FindBy(xpath = "(//span[text()=\"×\"])[2]") private WebElement CloseButtonForgotPassword;
 	@FindBy(xpath = "//button[text()=\"Send OTP\"]") private WebElement SendOTP;
+	@FindBy(xpath = "//input[@id=\"user_mobile_forgot\"]") private WebElement InserMobForgotPassword;
 	@FindBy(xpath = "//span[@id=\"id_forgot_otp_send_err\"]") private WebElement ErrorMessageForgotPassMobNumber;
-	@FindBy(xpath = "//span[@id=\"id_invalid_forgot_err\"]") private WebElement ErrorMessageForgotPassOTP;
+	@FindBy(xpath = "//span[text()=\"OTP is required\"]") private WebElement ErrorMessageForgotPassOTP;
+	@FindBy(xpath = "//span[@id=\"id_forgot_otp_success\"]") private WebElement OTPSuccessMessage;
 	@FindBy(xpath = "//a[@class=\"btn btn-a add-new-catalog-bt add_new_catalog_btn\"]") private WebElement AddNewCatalog;
 	@FindBy(xpath = "//input[@id=\"catalog_image\"]") public WebElement CatalogImage;
 	@FindBy(xpath = "//input[@class=\"form-control input-a\"]") public WebElement CatalogName;
@@ -42,14 +46,17 @@ public class Login_Page extends BaseClass {
 	@FindBy(xpath = "//button[text()=\"Save & Continue\"]")private WebElement SaveAndContinuebuttonThemePage;
 	@FindBy(xpath = "//button[text()=\"Save & Continue\"]")private WebElement SaveAndContinuebuttonStep2Page;
 	@FindBy(xpath = "//a[text()=\"ADD NEW PRODUCT\"]")private WebElement AddNewProductButton;
-	@FindBy(xpath = "//label[@class=\"label-b\"]") private WebElement AddExistingProductButton;
-	@FindBy(xpath = "(//a[text()=\"PUBLISH CATALOG\"])[2]")private WebElement PublishCatalog;
+	@FindBy(xpath = "//input[@id=\"arr_products_1\"]//following-sibling::label") private WebElement AddExistingProductButton;
+	@FindBy(xpath = "(//a[text()=\"PUBLISH CATALOG\"])[1]")private WebElement PublishCatalog;
+	@FindBy(xpath = "(//a[text()=\"PUBLISH CATALOG\"])[2]")private WebElement PublishCatalog2;
 	@FindBy(xpath = "class=\"sub-title-b text-center \"") private WebElement TotalViewstext;
-	
+	@FindBy(xpath = "//nav[@class=\"nav-menu d-none d-lg-block\"]//ul//li//a[@href=\"https://www.sellingo.ai/merchant/mycatalog\"]") private WebElement MyCatalogHeader;
+	@FindBy(xpath = "//span[@class=\"dele-buttons\"]") private WebElement deleteIcon;
+
 	public Login_Page() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void enterMobileNumber(String mobileNumber) {
 		ReusableMethods.explicitWait(InputMobileNumber);
 		InputMobileNumber.sendKeys(mobileNumber);	
@@ -58,14 +65,14 @@ public class Login_Page extends BaseClass {
 		ReusableMethods.explicitWait(InsertPassword);
 		InsertPassword.sendKeys(password);
 	}
-	
+
 	public void clickLoginButton() {
 		ReusableMethods.explicitWait(LoginButton);
 		LoginButton.click();	
 	}
 	public String afterLoginURL() {
 		return driver.getCurrentUrl();
-		 
+
 	}
 	public String loginFlow(String mobileNumber, String password) {
 		enterMobileNumber(mobileNumber);
@@ -73,55 +80,67 @@ public class Login_Page extends BaseClass {
 		clickLoginButton();
 		return afterLoginURL();	
 	}
-	
+
 	public String mobileNumberFieldErrorMessge(String password ) {
 		enterPassword(password );
 		clickLoginButton();
 		return ErrorMessageMobileNumber.getText();
 	}
-	
+
 	public String passwordFieldErrorMessage(String mobileNumber) {
+		InsertPassword.clear();
 		enterMobileNumber(mobileNumber);
 		clickLoginButton();
 		return ErrorMessagePassword.getText();
 	}
-	
-	public void clickForgotPassword() {		
-		clickLoginButton();
+
+	public String clickForgotPassword() {		
+		//	clickLoginButton();
 		ReusableMethods.explicitWait(ForgotPasswordLink);
 		ForgotPasswordLink.click();
+		ReusableMethods.explicitWait(ForgotPasswordText);
+		return ForgotPasswordText.getText();
 	}
-	
+
 	public void clickForgotPassword2() {		
 		ReusableMethods.explicitWait(ForgotPasswordLink);
 		ForgotPasswordLink.click();
 	}
-	
+
 	public void forgotPaaswordClose(){
-		clickForgotPassword();
+		//clickForgotPassword();
 		ReusableMethods.explicitWait(CloseButtonForgotPassword);
 		CloseButtonForgotPassword.click();
 	}
-	
+
+	public String getSuucessMessage(String mobileNumberForgotPass) {
+		InserMobForgotPassword.sendKeys(mobileNumberForgotPass);
+		SendOTP.click();
+		ReusableMethods.explicitWait(OTPSuccessMessage);
+		return OTPSuccessMessage.getText();
+	}
+
 	public String forgotPassErrorMsgMobNumber() {
-		clickForgotPassword();
 		ReusableMethods.explicitWait(SendOTP);	
 		SendOTP.click();
 		return ErrorMessageForgotPassMobNumber.getText();	
 	}
-	
-	public String forgotPassOtpErrorMessage() {
+
+	public String forgotPassOtpErrorMessage() {	
+		ConfirmOTPButton.click();
+		ReusableMethods.explicitWait(ErrorMessageForgotPassOTP);
 		return ErrorMessageForgotPassOTP.getText();
-		}
-	
-	public void createNewCatalog() throws InterruptedException {
+	}
+
+	public void createNewCatalog() throws EncryptedDocumentException, Throwable {
+		Thread.sleep(5000);
 		ReusableMethods.explicitWait(AddNewCatalog);	
 		AddNewCatalog.click();
 		Thread.sleep(5000);
-		CatalogImage.sendKeys("C:\\Users\\dk209\\Downloads\\Narrow Chain Bracelet & Plain Bangle - Narrow Chain Bracelet &amp; Plain Bangle.jpeg");
+		CatalogImage.sendKeys(ReusableMethods.ExcellDataFetching(32, 1));
 		Thread.sleep(5000);
-		CatalogName.sendKeys("TestCatalogName");
-		CatalogDescription.sendKeys("Test Catalog Description");
+		CatalogName.sendKeys(ReusableMethods.ExcellDataFetching(31, 1));
+		CatalogDescription.sendKeys(ReusableMethods.ExcellDataFetching(33, 1));
 		SaveAndContinueButton.click();
 		System.out.println("Congrats...Step1 catalog information has completed successfully....!!!!");
 		CatalogSettingText.getText();
@@ -132,28 +151,33 @@ public class Login_Page extends BaseClass {
 		SaveAndContinuebuttonThemePage.click();
 		ReusableMethods.explicitWait(ShowPriceToogle);	
 		Select s = new Select(DropdownTextOnExpiry);
-		s.selectByVisibleText("Add to Cart");
+		s.selectByVisibleText(ReusableMethods.ExcellDataFetching(34, 1));
 		ShowPriceToogle.click();
 		ShowQuantityToggle.click();
 		BackOrderingToggle.click();
 		BuyerMobVerification.click();
 		SaveAndContinuebuttonStep2Page.click();
 		System.out.println("Congrats...Step2 catalog Setting has completed successfully....!!!!");
-		Thread.sleep(3000);
-		ReusableMethods.explicitWait(AddExistingProductButton);
+		Thread.sleep(5000);
+		//ReusableMethods.explicitWait(AddExistingProductButton);
+		ReusableMethods.scrollDown(PublishCatalog2);
+		if(AddExistingProductButton.isSelected()) {
+			System.out.println("radio button is selected");		
+		}
+		else{
+			System.out.println("not selected");
+		}
 		//AddNewProductButton.click();
 		//AddExistingProductButton.click();
-		Actions act = new Actions(driver);
+		//Actions act = new Actions(driver);
 		//act.moveToElement(AddExistingProductButton);
-		act.click(AddExistingProductButton);
+		//act.click(AddExistingProductButton);
 		ReusableMethods.explicitWait(PublishCatalog);
+		Thread.sleep(2000);
 		PublishCatalog.click();
 		ReusableMethods.explicitWait(TotalViewstext);
-		//return TotalViewstext.getText();
-
-	}
-	
-	
-	
-	
+		TotalViewstext.getText();
+		MyCatalogHeader.click();
+		deleteIcon.click();
+	}	
 }

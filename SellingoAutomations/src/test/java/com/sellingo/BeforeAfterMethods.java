@@ -2,8 +2,10 @@ package com.sellingo;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -15,7 +17,6 @@ public class BeforeAfterMethods extends BaseClass {
 	@BeforeSuite
 	public void beforeSuitMethod() {
 		ExtentManager.onStart();
-
 	}
 
 	@BeforeTest
@@ -23,10 +24,19 @@ public class BeforeAfterMethods extends BaseClass {
 
 	}
 
-	@BeforeMethod 
-	public static void setup(ITestResult result) {
-		ExtentManager.onTestSuccess(result.getMethod().getMethodName());
+	@BeforeClass 
+	public  void setup() {	
 		driverSetup();
+	}
+
+	@BeforeMethod
+	public void beforeMethod(ITestResult result) {
+		ExtentManager.onTestSuccess(result.getMethod().getMethodName());	
+	}
+
+	@AfterClass
+	public void teardown() {
+		driver.close();
 	}
 
 	@AfterMethod

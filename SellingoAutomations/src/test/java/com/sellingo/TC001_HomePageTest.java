@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pom_Pages.Home_Page_POM;
@@ -16,10 +16,11 @@ import test_utility.ReusableMethods;
 
 public class TC001_HomePageTest extends BeforeAfterMethods {
 	Home_Page_POM homePagePom ;
-
-	@BeforeMethod
+	
+	@BeforeClass
 	public void setUp() {
 		homePagePom  = new Home_Page_POM();
+		
 	}
 	public List<String> expectedHeader () throws EncryptedDocumentException, Throwable {
 		List<String> expectedHeaderList = new ArrayList<String>();
@@ -29,7 +30,6 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 		expectedHeaderList.add(ReusableMethods.ExcellDataFetching(5, 1));
 		expectedHeaderList.add(ReusableMethods.ExcellDataFetching(6, 1));
 		expectedHeaderList.add( ReusableMethods.ExcellDataFetching(7, 1));
-
 		return expectedHeaderList;
 	}
 
@@ -45,20 +45,17 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 
 	@Test(priority = 1)
 	public void TC001_SC001_verifyHomePageText() throws EncryptedDocumentException, Throwable {
-
 		List<String> actualMenuList =  homePagePom.headerMenuList();
-		List<String> expectedMenuList = expectedHeader();
-
+		List<String> expectedMenuList = expectedHeader();		
 		Assert.assertEquals(actualMenuList, expectedMenuList);
 		String actualRegiterText= homePagePom.registerText();
 		String expectedRegiterText = ReusableMethods.ExcellDataFetching(18, 1);
 		Assert.assertEquals(actualRegiterText, expectedRegiterText);
-		ExtentManager.onTestPass("Extent report checking"); // insert message here for perticular task
-
-		String actualLoginText= 	homePagePom.loginText();
+		ExtentManager.onTestPass("Verified Succesfully Register Text"); // insert message here for perticular task
+		String actualLoginText= homePagePom.loginText();
 		String expectedLoginText = ReusableMethods.ExcellDataFetching(19, 1);
 		Assert.assertEquals(actualLoginText, expectedLoginText);
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified Succesfully Login Text");
 	}
 
 	@Test (priority = 2)

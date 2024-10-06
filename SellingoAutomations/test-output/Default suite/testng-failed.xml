@@ -5,13 +5,16 @@
     <classes>
       <class name="com.sellingo.TC002_LoginTest">
         <methods>
+          <include name="beforeMethod"/>
           <include name="beforeSuitMethod"/>
+          <include name="TC002_SC006_testErrorMessageOTPfield"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="setup"/>
+          <include name="TC002_SC008_loginTest"/>
           <include name="BeforeMethod"/>
+          <include name="teardown"/>
           <include name="tearDown"/>
-          <include name="TC002_SC009_createCatalogWithAlreadyExistingProduct"/>
         </methods>
       </class> <!-- com.sellingo.TC002_LoginTest -->
     </classes>
