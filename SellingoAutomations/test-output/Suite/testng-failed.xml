@@ -3,6 +3,31 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.sellingo.TC002_LoginTest">
+        <methods>
+          <include name="TC002_SC005_verifySuccessMessageForMobField"/>
+          <include name="TC002_SC010_createCatalogStep3"/>
+          <include name="TC002_SC008_createCatalogStep1"/>
+          <include name="TC002_SC009_createCatalogStep2"/>
+          <include name="TC002_SC002_errorMessgePasswordTest"/>
+          <include name="TC002_SC004_testErrorMessageForgotPassword"/>
+          <include name="TC002_SC013_editeditCreateCatalogStep3"/>
+          <include name="TC002_SC003_forgotPasswordFlow"/>
+          <include name="tearDown"/>
+          <include name="TC002_SC001_errorMessgeMobileNumberTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuitMethod"/>
+          <include name="TC002_SC011_editCreateCatalogStep1"/>
+          <include name="TC002_SC_012_editCreateCatalogStep2"/>
+          <include name="TC002_SC006_testErrorMessageOTPfield"/>
+          <include name="afterSuite"/>
+          <include name="TC002_SC007_loginTest"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="BeforeMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.sellingo.TC002_LoginTest -->
       <class name="com.sellingo.TC001_HomePageTest">
         <methods>
           <include name="TC001_SC007_verifyYouTubeLinkTest"/>
@@ -11,6 +36,7 @@
           <include name="setUp"/>
           <include name="TC001_SC001_verifyHomePageText"/>
           <include name="tearDown"/>
+          <include name="beforeMethod"/>
           <include name="TC001_SC005_verifyInstagramLinkTest"/>
           <include name="beforeSuitMethod"/>
           <include name="TC001_SC002_verifySlides"/>
@@ -18,6 +44,7 @@
           <include name="TC001_SC004_verifyTwitterLinkTest"/>
           <include name="beforeTest"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.sellingo.TC001_HomePageTest -->
     </classes>

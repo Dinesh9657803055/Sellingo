@@ -7,11 +7,12 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="beforeSuitMethod"/>
-          <include name="TC002_SC006_testErrorMessageOTPfield"/>
+          <include name="TC002_SC011_editCreateCatalogStep1"/>
+          <include name="TC002_SC_012_editCreateCatalogStep2"/>
+          <include name="TC002_SC013_editeditCreateCatalogStep3"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="setup"/>
-          <include name="TC002_SC008_loginTest"/>
           <include name="BeforeMethod"/>
           <include name="teardown"/>
           <include name="tearDown"/>

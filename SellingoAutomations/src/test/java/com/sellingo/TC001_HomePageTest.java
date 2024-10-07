@@ -63,7 +63,7 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 		HashMap<String, String> actualSlides = homePagePom.verifySlide();
 		HashMap<String, String>	expectedSlides = expectedSlideTitleAndSubtitle();	
 		Assert.assertEquals(actualSlides, expectedSlides);
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Successfully Verified Slides Tile and SubTile as well as Slides are sliding ");
 	}
 
 	@Test (priority = 3)
@@ -71,14 +71,14 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 		String actualFacebookURL = homePagePom.verifyFacebookLink();
 		String expectedFacebookURL =ReusableMethods.ExcellDataFetching(20, 1);
 		Assert.assertEquals(actualFacebookURL, expectedFacebookURL);
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified Facebook Link is working fine");
 	}
 
 	@Test (priority = 4)
 	public void TC001_SC004_verifyTwitterLinkTest() throws EncryptedDocumentException, Throwable {
 		String actualTwitterURL = homePagePom.verifyTwitterLink();	
 		Assert.assertTrue(actualTwitterURL.contains(ReusableMethods.ExcellDataFetching(21, 1)));	
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified Twitter Link is working fine");
 	}
 
 	@Test (priority = 5)
@@ -86,14 +86,14 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 		String actualInstagramURL=homePagePom.verifyInstagramLink();
 		String expectedInstagramURL =  ReusableMethods.ExcellDataFetching(22, 1);
 		Assert.assertEquals(actualInstagramURL, expectedInstagramURL);
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified Instagram Link is working fine");
 	}
 
 	@Test (priority = 6)
 	public void TC001_SC006_verifyLinkedinLinkTest() throws EncryptedDocumentException, Throwable {
 		String actualLinkedinURL= homePagePom.verifyLinkedinLink();
 		Assert.assertTrue(actualLinkedinURL.contains(ReusableMethods.ExcellDataFetching(23, 1)));
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified LinkedIn Link is working fine");
 	}
 
 	@Test (priority = 7)
@@ -101,6 +101,6 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 		String actualYouTubeURL = homePagePom.verifyYouTubeLink();
 		String expctedYouTubeURL =ReusableMethods.ExcellDataFetching(24, 1);
 		Assert.assertEquals(actualYouTubeURL, expctedYouTubeURL);
-		ExtentManager.onTestPass("Extent report checking");
+		ExtentManager.onTestPass("Verified Youtube Link is working fine");
 	}
 }

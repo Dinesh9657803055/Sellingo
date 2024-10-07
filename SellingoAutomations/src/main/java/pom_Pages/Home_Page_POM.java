@@ -79,7 +79,6 @@ public class Home_Page_POM extends BaseClass{
 		}
 		driver.switchTo().window(mainWindow);
 		return currentURL1;
-
 	}
 
 	public String verifyFacebookLink() {
@@ -96,9 +95,8 @@ public class Home_Page_POM extends BaseClass{
 		TwitterLink.click();
 		String actualTwitterUrl = switchToChildwindowhandles();
 		return actualTwitterUrl;
-
 	}
-	
+
 	public String verifyInstagramLink() {
 		ReusableMethods.scrollDown(ShareOn);
 		ReusableMethods.explicitWait(InstagramLink);
@@ -106,7 +104,7 @@ public class Home_Page_POM extends BaseClass{
 		String actualInstaramUrl = switchToChildwindowhandles ();
 		return actualInstaramUrl;	
 	}
-	
+
 	public String verifyLinkedinLink() {
 		ReusableMethods.scrollDown(ShareOn);
 		ReusableMethods.explicitWait(LinkedinLink);
@@ -114,7 +112,7 @@ public class Home_Page_POM extends BaseClass{
 		String actualLinkedinUrl =switchToChildwindowhandles();
 		return actualLinkedinUrl;
 	}
-	
+
 	public String verifyYouTubeLink() {
 		ReusableMethods.scrollDown(ShareOn);
 		ReusableMethods.explicitWait(YoutubeLink);
@@ -122,13 +120,9 @@ public class Home_Page_POM extends BaseClass{
 		String actualYouTubeUrl = switchToChildwindowhandles ();
 		return actualYouTubeUrl;
 	}
-	
+
 	public void LoginFlow() {
 		ReusableMethods.explicitWait(LoginText);
 		LoginText.click();
 	}
-	
-
-
-
 }
