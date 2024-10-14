@@ -42,8 +42,8 @@ public class ExtentManager {
 	public static void onTestPass(String msg) {
 		Markup m = MarkupHelper.createLabel(msg, ExtentColor.GREEN);
 		test.log(Status.PASS, m);
-
 	}
+	
 
 	public static void onTestFailure(String msg) {
 		test.addScreenCaptureFromBase64String(ReusableMethods.screenShot());
