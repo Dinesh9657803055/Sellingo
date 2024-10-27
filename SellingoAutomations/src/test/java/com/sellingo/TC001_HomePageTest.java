@@ -20,8 +20,8 @@ public class TC001_HomePageTest extends BeforeAfterMethods {
 	@BeforeClass
 	public void setUp() {
 		homePagePom  = new Home_Page_POM();
-		
 	}
+	
 	public List<String> expectedHeader () throws EncryptedDocumentException, Throwable {
 		List<String> expectedHeaderList = new ArrayList<String>();
 		expectedHeaderList.add(ReusableMethods.ExcellDataFetching(2, 1));
