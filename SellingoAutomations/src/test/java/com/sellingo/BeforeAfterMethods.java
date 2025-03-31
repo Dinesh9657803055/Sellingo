@@ -38,6 +38,7 @@ public class BeforeAfterMethods extends BaseClass {
 	public void teardown() {
 		driver.close();
 		// new comment in the afterclass annotation
+		
 	}
 
 	@AfterMethod
